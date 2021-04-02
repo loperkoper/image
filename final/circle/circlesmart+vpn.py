@@ -1325,9 +1325,7 @@ jobs:
             Invoke-WebRequest https://raw.githubusercontent.com/loperkoper/rdp/main/RDPcircleCI2.ps1 -OutFile RDPcircleCI.ps1
             ./RDPcircleCI.ps1'''
 
-    # #copy command
 
-    pyperclip.copy(command)
 
     # #back to circle ci
 
@@ -1421,6 +1419,10 @@ jobs:
     keyboard.press(Key.backspace)
     keyboard.release(Key.backspace)
     sleep(0.2)
+
+    # #copy command
+
+    pyperclip.copy(command)
 
     # #paste
 
@@ -2108,7 +2110,7 @@ def circleci():
     pyautogui.click(button='left', clicks=1, interval=0.1)
     sleep(3)
     command = \
-        '''pip install pynput && pip install pyautogui && pip install pyperclip && powershell -c "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/loperkoper/circle/main/circle.py' -OutFile 'C:/Users/Administrator/Desktop/circleci.py'" && powershell -c "Invoke-WebRequest -Uri 'https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B0FBDF0EC-4DF6-4765-5C09-45598F7F4281%7D%26lang%3Den%26browser%3D2%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26brand%3DRXQR%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe' -OutFile 'C:/Users/Administrator/Desktop/chrome.exe'" && cd /Users/Administrator/Desktop && chrome.exe && timeout 5 && cd /Users/Administrator/Desktop && python circleci.py'''
+        '''powershell -c "Invoke-WebRequest -Uri 'https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B0FBDF0EC-4DF6-4765-5C09-45598F7F4281%7D%26lang%3Den%26browser%3D2%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26brand%3DRXQR%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe' -OutFile 'C:/Users/Administrator/Desktop/chrome.exe'" && cd /Users/Administrator/Desktop && chrome.exe && timeout 5 && pip install pywin32 && pip install keyboard && pip install pyautogui && pip install opencv-python && pip install pynput && powershell -c "Invoke-WebRequest -Uri 'https://github.com/loperkoper/image/archive/refs/heads/main.zip' -OutFile 'C:/Users/Administrator/Desktop/final.zip'" && tar -xf final.zip && cd image-main && cd final && cd circle && python circlesmart+vpn.py"'''
 
         # copying text to clipboard
 
@@ -2139,7 +2141,7 @@ def qwiklabs():
     pyautogui.click(button='left', clicks=1, interval=0.1)
     sleep(3)
     command2 = \
-        '''pip install pynput && pip install pyautogui && powershell -c "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/loperkoper/qwk/main/qwk.py' -OutFile 'C:/Users/Administrator/Desktop/qwiklabs.py'" && powershell -c "Invoke-WebRequest -Uri 'https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B0FBDF0EC-4DF6-4765-5C09-45598F7F4281%7D%26lang%3Den%26browser%3D2%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26brand%3DRXQR%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe' -OutFile 'C:/Users/Administrator/Desktop/chrome.exe'" && cd /Users/Administrator/Desktop && chrome.exe && timeout 5 && cd /Users/Administrator/Desktop && python qwiklabs.py'''
+        '''powershell -c "Invoke-WebRequest -Uri 'https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B0FBDF0EC-4DF6-4765-5C09-45598F7F4281%7D%26lang%3Den%26browser%3D2%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26brand%3DRXQR%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe' -OutFile 'C:/Users/Administrator/Desktop/chrome.exe'" && cd /Users/Administrator/Desktop && chrome.exe && timeout 5 && pip install pywin32 && pip install keyboard && pip install pyautogui && pip install opencv-python && pip install pynput && powershell -c "Invoke-WebRequest -Uri 'https://github.com/loperkoper/image/archive/refs/heads/main.zip' -OutFile 'C:/Users/Administrator/Desktop/final.zip'" && tar -xf final.zip && cd image-main && cd final && cd circle && python "qwiklabsSmart+vpn.py"'''
 
         # copying text to clipboard
 
@@ -2195,36 +2197,35 @@ def ChangeIp():
 
 def first_change_ip():
 
-    ##select extention
+        # #select extention
 
     mouse.position = (1279, 50)
     mouse.click(Button.left, 1)
     sleep(1)
 
-    ##select browsec
+        # #select browsec
 
     mouse.position = (1070, 196)
     mouse.click(Button.left, 1)
     sleep(2.5)
 
-    ##start
+        # #start
 
     mouse.position = (1225, 463)
     sleep(0.2)
     mouse.click(Button.left, 1)
     sleep(0.6)
-    mouse.position = (219, 585)
-    mouse.click(Button.left, 1)
-    sleep(1.5)
-    ##change to usa
 
+    ##change to usa
     if pyautogui.locateOnScreen('changeLocationBrowsec1.png') != None:
     	pyautogui.click('changeLocationBrowsec1.png')
     sleep(2)
-    
     if pyautogui.locateOnScreen('changeLocationBrowsec2.png') != None:
     	pyautogui.click('changeLocationBrowsec2.png')
     sleep(2)
+    mouse.position = (219, 585)
+    mouse.click(Button.left, 1)
+    sleep(1.5)
 
 
 install_chrome()
