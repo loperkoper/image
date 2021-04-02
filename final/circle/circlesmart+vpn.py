@@ -995,10 +995,44 @@ def signup():
     sleep(3)
 
     # #while page appear wait
-
+    q = 0
     while pyautogui.locateOnScreen('stopwaitRepository.png',
                                    confidence=0.8) == None:
-        sleep(1)
+        sleep(5)
+        q = q+1
+        if q ==15:
+	        clear_cookies()
+	        mouse.position = (1343, 14)
+	        mouse.click(Button.left, 1)
+	        open_chrome()
+	        ChangeIp()
+	        signup()
+	        sleep(0.2)
+	        z = pyperclip.paste()
+	        if len(z) < 35:
+	            remote_desktop()
+	            qwiklabs()
+	            minimize()
+	        i = 1
+	        while True:
+	            open_chrome()
+	            clear_cookies()
+	            ChangeIp()
+	            signup()
+	            sleep(0.2)
+	            z = pyperclip.paste()
+	            if len(z) < 35:
+	                remote_desktop()
+	                if i % 5 == 0:
+	                    circleci()
+	                    minimize()
+	                else:
+	                    qwiklabs()
+	                    minimize()
+	                i = i + 1
+	            else:
+	                i = i
+
     sleep(2)
 
     # #write new
