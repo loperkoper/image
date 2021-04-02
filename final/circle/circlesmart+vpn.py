@@ -24,7 +24,7 @@ def install_chrome():
 
     # #sleep
 
-    sleep(7)
+    sleep(25)
 
     # #maximize
 
