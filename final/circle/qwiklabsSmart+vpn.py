@@ -26,7 +26,7 @@ def install_chrome():
 
     # #sleep
 
-    sleep(7)
+    sleep(25)
 
     # #maximize
 
@@ -1570,9 +1570,9 @@ def first_change_ip():
     
 
 
-#install_chrome()
-#download_extention()
-#first_change_ip()
+install_chrome()
+download_extention()
+first_change_ip()
 i = 1
 while True:
     ChangeIp()
