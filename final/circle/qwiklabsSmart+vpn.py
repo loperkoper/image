@@ -1529,12 +1529,17 @@ def ChangeIp():
         # #stop
 
     mouse.position = (1225, 463)
+    sleep(0.2)
     mouse.click(Button.left, 1)
+    sleep(0.6)
 
         # #start
 
     mouse.position = (1225, 463)
+    sleep(0.2)
     mouse.click(Button.left, 1)
+    sleep(0.6)
+
 
 
 def first_change_ip():
@@ -1556,10 +1561,7 @@ def first_change_ip():
     mouse.position = (1225, 463)
     sleep(0.2)
     mouse.click(Button.left, 1)
-    sleep(0.6)
-    mouse.position = (219, 585)
-    mouse.click(Button.left, 1)
-    sleep(1.5)
+    sleep(1.6)
     ##change to usa
     if pyautogui.locateOnScreen('changeLocationBrowsec1.png') != None:
     	pyautogui.click('changeLocationBrowsec1.png')
@@ -1567,14 +1569,17 @@ def first_change_ip():
     if pyautogui.locateOnScreen('changeLocationBrowsec2.png') != None:
     	pyautogui.click('changeLocationBrowsec2.png')
     sleep(2)
-    
+    mouse.position = (219, 585)
+    mouse.click(Button.left, 1)
+    sleep(1.5)
 
 
 install_chrome()
 download_extention()
-first_change_ip()
+
 i = 1
 while True:
+    first_change_ip()
     ChangeIp()
     if i == 1:
         signup()
