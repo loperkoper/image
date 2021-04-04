@@ -1040,6 +1040,7 @@ def signup():
     if pyautogui.locateOnScreen('CreatRepository.png',
                                    confidence=0.8) == None:
         sleep(5)
+        q = 0
         q = q + 1
         if q == 15:
             clear_cookies()
