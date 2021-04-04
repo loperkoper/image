@@ -533,6 +533,7 @@ def signup():
                     Buster_Money()
             except:
                 if pyautogui.locateOnScreen('captchaPASS.png') == None:
+                    i = 5
                     while True:
                         panj()
                         ChangeIp()
@@ -1006,6 +1007,7 @@ def signin():
     if pyautogui.locateOnScreen('GoogleSignin.png') != None:
         pass
     if pyautogui.locateOnScreen('GoogleSignin.png') == None:
+        i = 5
         while True:
             panj()
             ChangeIp()
@@ -1115,6 +1117,7 @@ def signin():
     if pyautogui.locateOnScreen('GoogleAccept.png') != None:
         pass
     if pyautogui.locateOnScreen('GoogleAccept.png') == None:
+        i = 5
         while True:
             panj()
             ChangeIp()
@@ -1176,6 +1179,7 @@ def signin():
     if pyautogui.locateOnScreen('GoogleConfirm.png') != None:
         pass
     if pyautogui.locateOnScreen('GoogleConfirm.png') == None:
+        i = 5
         while True:
             panj()
             ChangeIp()
@@ -1249,6 +1253,7 @@ def signin():
     if pyautogui.locateOnScreen('GoogleWaitCheckbox.png') != None:
         pass
     if pyautogui.locateOnScreen('GoogleWaitCheckbox.png') == None:
+        i = 5
         while True:
             panj()
             ChangeIp()
