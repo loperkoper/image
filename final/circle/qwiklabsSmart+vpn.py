@@ -30,14 +30,11 @@ def Controll_Error():
                             signup()
                             sleep(3)
                             signin()
-                        if i == 19:
-                            panj()
-                            i = 1
-                            signup()
-                            signin()
                         signin2()
                         sleep(3)
-
+                        if i % 5 == 0:
+                            panj()
+                            i = 0
                         i = i + 1
 
 def retry1():
@@ -798,14 +795,11 @@ def signup():
                             signup()
                             sleep(3)
                             signin()
-                        if i == 19:
-                            panj()
-                            i = 1
-                            signup()
-                            signin()
                         signin2()
                         sleep(3)
-
+                        if i % 5 == 0:
+                            panj()
+                            i = 0
                         i = i + 1
 
         # click on creat account
@@ -972,14 +966,11 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
-            if i == 19:
-                     panj()
-                     i = 1
-                     signup()
-                     signin()
             signin2()
             sleep(3)
-
+            if i % 5 == 0:
+                panj()
+                i = 0
             i = i + 1
     sleep(0.5)
     if pyautogui.locateOnScreen('qwiklabsSearchbar.png') != None:
@@ -1025,14 +1016,11 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
-            if i == 19:
-                     panj()
-                     i = 1
-                     signup()
-                     signin()
             signin2()
             sleep(3)
-
+            if i % 5 == 0:
+                panj()
+                i = 0
             i = i + 1
     if pyautogui.locateOnScreen('A Tour of Qwiklabs and Google Cloud.png') != None:
          pyautogui.click('A Tour of Qwiklabs and Google Cloud.png')
@@ -1460,13 +1448,10 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
-            if i == 19:
-                     panj()
-                     i = 1
-                     signup()
-                     signin()
             sleep(3)
-
+            if i % 5 == 0:
+                panj()
+                i = 0
             i = i + 1
 
         # #paste user:
@@ -1575,14 +1560,11 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
-            if i == 19:
-                     panj()
-                     i = 1
-                     signup()
-                     signin()
             signin2()
             sleep(3)
-
+            if i % 5 == 0:
+                panj()
+                i = 0
             i = i + 1
 
         # #click accept
@@ -1642,14 +1624,11 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
-            if i == 19:
-                     panj()
-                     i = 1
-                     signup()
-                     signin()
             signin2()
             sleep(3)
-
+            if i % 5 == 0:
+                panj()
+                i = 0
             i = i + 1
 
         # #click confirm
@@ -1721,14 +1700,11 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
-            if i == 19:
-                     panj()
-                     i = 1
-                     signup()
-                     signin()
             signin2()
             sleep(3)
-
+            if i % 5 == 0:
+                panj()
+                i = 0
             i = i + 1
 
         # #choose country:
@@ -1825,14 +1801,11 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
-            if i == 19:
-                     panj()
-                     i = 1
-                     signup()
-                     signin()
             signin2()
             sleep(3)
-
+            if i % 5 == 0:
+                panj()
+                i = 0
             i = i + 1
     pyautogui.click('CountinueTerminal.png')
     #wait
@@ -1886,14 +1859,11 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
-            if i == 19:
-                     panj()
-                     i = 1
-                     signup()
-                     signin()
             signin2()
             sleep(3)
-
+            if i % 5 == 0:
+                panj()
+                i = 0
             i = i + 1
     
         # #select on shell
@@ -2476,14 +2446,11 @@ def signin2():
                 signup()
                 sleep(3)
                 signin()
-            if i == 19:
-                     panj()
-                     i = 1
-                     signup()
-                     signin()
             signin2()
             sleep(3)
-
+            if i % 5 == 0:
+                panj()
+                i = 0
             i = i + 1
 
         # #paste user:
@@ -2592,14 +2559,11 @@ def signin2():
                 signup()
                 sleep(3)
                 signin()
-            if i == 19:
-                     panj()
-                     i = 1
-                     signup()
-                     signin()
             signin2()
             sleep(3)
-
+            if i % 5 == 0:
+                panj()
+                i = 0
             i = i + 1
 
         # #click accept
@@ -2659,14 +2623,11 @@ def signin2():
                 signup()
                 sleep(3)
                 signin()
-            if i == 19:
-                     panj()
-                     i = 1
-                     signup()
-                     signin()
             signin2()
             sleep(3)
-
+            if i % 5 == 0:
+                panj()
+                i = 0
             i = i + 1
 
         # #click confirm
@@ -2738,14 +2699,11 @@ def signin2():
                 signup()
                 sleep(3)
                 signin()
-            if i == 19:
-                     panj()
-                     i = 1
-                     signup()
-                     signin()
             signin2()
             sleep(3)
-
+            if i % 5 == 0:
+                panj()
+                i = 0
             i = i + 1
 
         # #choose country:
@@ -2842,14 +2800,11 @@ def signin2():
                 signup()
                 sleep(3)
                 signin()
-            if i == 19:
-                     panj()
-                     i = 1
-                     signup()
-                     signin()
             signin2()
             sleep(3)
-
+            if i % 5 == 0:
+                panj()
+                i = 0
             i = i + 1
     pyautogui.click('CountinueTerminal.png')
     ##wait
@@ -2903,14 +2858,11 @@ def signin2():
                 signup()
                 sleep(3)
                 signin()
-            if i == 19:
-                     panj()
-                     i = 1
-                     signup()
-                     signin()
             signin2()
             sleep(3)
-
+            if i % 5 == 0:
+                panj()
+                i = 0
             i = i + 1
     
         # #select on shell
@@ -3294,11 +3246,10 @@ while True:
         sleep(3)
         signin()
         i = i+1
-    if i == 19:
-        panj()
-        i = 1
-        signup()
-        signin()
     signin2()
     sleep(3)
+    if i % 5 == 0:
+        ChangeIp()
+        panj()
+        i = 0
     i = i + 1
