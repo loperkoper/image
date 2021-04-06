@@ -2181,7 +2181,7 @@ jobs:
         sleep(7)
 
     if pyautogui.locateOnScreen('region.png') != None:
-        sleep(11)
+        sleep(20)
 
         # #refresh page
 
@@ -2225,7 +2225,7 @@ jobs:
         sleep(7)
 
     if pyautogui.locateOnScreen('region.png') != None:
-        sleep(5)
+        sleep(10)
 
         # #refresh page
 
@@ -2268,7 +2268,7 @@ jobs:
 
     mouse.position = (566, 393)
     mouse.click(Button.left, 3)
-    sleep(0.5)
+    sleep(0.2)
     keyboard.press(Key.ctrl)
     keyboard.press('c')
     keyboard.release('c')
@@ -2315,338 +2315,337 @@ jobs:
                 qwiklabs()
                 minimize()
             i = i + 1
-
-    # #close chrome
-    ChangeIp_On_Or_Off()
-    mouse.position = (1343, 14)
-    mouse.click(Button.left, 1)
-
-        # #go to new window on windows
-
-    keyboard.press(Key.cmd)
-    keyboard.press(Key.ctrl)
-    keyboard.press('d')
-    keyboard.release(Key.cmd)
-    keyboard.release(Key.ctrl)
-    keyboard.release('d')
-    sleep(1)
-
-        # #click on search bar
-
-    mouse.position = (72, 745)
-    mouse.click(Button.left, 1)
-    sleep(1)
-
-        # #type remote
-
-    keyboard.type('remote')
-    sleep(2)
-
-        # #click on remote desktop
-
-    mouse.position = (259, 203)
-    mouse.click(Button.left, 1)
-    sleep(1.5)
-
-        # #click on option
-
-    mouse.position = (501, 350)
-    mouse.click(Button.left, 1)
-    sleep(0.5)
-
-        # #click on URL bar
-
-    mouse.position = (659, 311)
-    mouse.click(Button.left, 1)
-    keyboard.press(Key.ctrl)
-    keyboard.press('a')
-    keyboard.release('a')
-    keyboard.release(Key.ctrl)
-    keyboard.press(Key.backspace)
-    keyboard.release(Key.backspace)
-    sleep(0.2)
-
-        # #paste the URL
-
-    c = pyperclip.paste()
-    sleep(0.2)
-    keyboard.type(c)
-    sleep(0.5)
-
-        # #select on type bar
-
-    mouse.position = (803, 312)
-    mouse.click(Button.left, 1)
-    sleep(0.5)
-
-        # #30 times pageleft
-
-    def page_left():
-        i = 0
-        while i < 30:
-            keyboard.press(Key.left)
-            keyboard.release(Key.left)
-            i = i + 1
-
-    page_left()
-    sleep(0.5)
-
-        # #6 times page right
-
-    def page_right():
-        i = 0
-        while i < 6:
-            keyboard.press(Key.right)
-            keyboard.release(Key.right)
-            i = i + 1
-
-    page_right()
-    sleep(0.6)
-
-        # #backspace 6 times
-
-    keyboard.press(Key.backspace)
-    keyboard.release(Key.backspace)
-    keyboard.press(Key.backspace)
-    keyboard.release(Key.backspace)
-    keyboard.press(Key.backspace)
-    keyboard.release(Key.backspace)
-    keyboard.press(Key.backspace)
-    keyboard.release(Key.backspace)
-    keyboard.press(Key.backspace)
-    keyboard.release(Key.backspace)
-    keyboard.press(Key.backspace)
-    keyboard.release(Key.backspace)
-    sleep(0.5)
-
-        # #select on type bar
-
-    mouse.position = (803, 312)
-    mouse.click(Button.left, 1)
-    sleep(0.5)
-
-        # keyboard.press(Key.backspace)
-        # keyboard.release(Key.backspace)
-        # sleep(0.25)
-        # #click on USER NAME
-
-    mouse.position = (662, 344)
-    mouse.click(Button.left, 1)
-    sleep(1)
-    keyboard.press(Key.ctrl)
-    keyboard.press('a')
-    keyboard.release('a')
-    keyboard.release(Key.ctrl)
-    keyboard.press(Key.backspace)
-    keyboard.release(Key.backspace)
-    sleep(0.2)
-    keyboard.type('Administrator')
-
-        # #Enter
-
-    keyboard.press(Key.enter)
-    keyboard.release(Key.enter)
-
-        # #sleep(2)
-
-    sleep(2)
-
-        # #type PASS
-
-    keyboard.type('Mvusic@123')
-    keyboard.press(Key.enter)
-    keyboard.release(Key.enter)
-    sleep(2)
-
-        # #click on YES
-
-    mouse.position = (742, 529)
-    mouse.click(Button.left, 1)
-    sleep(20)
-    if pyautogui.locateOnScreen('RemoteConectionCheck.png', confidence=0.8) != None:
-        pass
-    else:
+    if 'tcp.ngrok.io' in c != False and len(c)>25 and len(c)<28:
+        # #close chrome
+        ChangeIp_On_Or_Off()
+        mouse.position = (1343, 14)
+        mouse.click(Button.left, 1)
+        
+            # #go to new window on windows
+        
+        keyboard.press(Key.cmd)
+        keyboard.press(Key.ctrl)
+        keyboard.press('d')
+        keyboard.release(Key.cmd)
+        keyboard.release(Key.ctrl)
+        keyboard.release('d')
+        sleep(1)
+        
             # #click on search bar
-            
-            mouse.position = (72, 745)
-            mouse.click(Button.left, 1)
-            sleep(1)
-            
-                # #type remote
-            
-            keyboard.type('remote')
-            sleep(2)
-            
-                # #click on remote desktop
-            
-            mouse.position = (259, 203)
-            mouse.click(Button.left, 1)
-            sleep(1.5)
-            
-                # #click on option
-            
-            mouse.position = (501, 350)
-            mouse.click(Button.left, 1)
-            sleep(0.5)
-            
-                # #click on URL bar
-            
-            mouse.position = (659, 311)
-            mouse.click(Button.left, 1)
-            keyboard.press(Key.ctrl)
-            keyboard.press('a')
-            keyboard.release('a')
-            keyboard.release(Key.ctrl)
-            keyboard.press(Key.backspace)
-            keyboard.release(Key.backspace)
-            sleep(0.2)
-            
-                # #paste the URL
-            
-            c = pyperclip.paste()
-            sleep(0.2)
-            keyboard.type(c)
-            sleep(0.5)
-            
-                # #select on type bar
-            
-            mouse.position = (803, 312)
-            mouse.click(Button.left, 1)
-            sleep(0.5)
-            
-                # #30 times pageleft
-            
-            def page_left():
-                i = 0
-                while i < 30:
-                    keyboard.press(Key.left)
-                    keyboard.release(Key.left)
-                    i = i + 1
-            
-            page_left()
-            sleep(0.5)
-            
-                # #6 times page right
-            
-            def page_right():
-                i = 0
-                while i < 6:
-                    keyboard.press(Key.right)
-                    keyboard.release(Key.right)
-                    i = i + 1
-            
-            page_right()
-            sleep(0.6)
-            
-                # #backspace 6 times
-            
-            keyboard.press(Key.backspace)
-            keyboard.release(Key.backspace)
-            keyboard.press(Key.backspace)
-            keyboard.release(Key.backspace)
-            keyboard.press(Key.backspace)
-            keyboard.release(Key.backspace)
-            keyboard.press(Key.backspace)
-            keyboard.release(Key.backspace)
-            keyboard.press(Key.backspace)
-            keyboard.release(Key.backspace)
-            keyboard.press(Key.backspace)
-            keyboard.release(Key.backspace)
-            sleep(0.5)
-            
-                # #select on type bar
-            
-            mouse.position = (803, 312)
-            mouse.click(Button.left, 1)
-            sleep(0.5)
-            
-                # keyboard.press(Key.backspace)
-                # keyboard.release(Key.backspace)
-                # sleep(0.25)
-                # #click on USER NAME
-            
-            mouse.position = (662, 344)
-            mouse.click(Button.left, 1)
-            sleep(1)
-            keyboard.press(Key.ctrl)
-            keyboard.press('a')
-            keyboard.release('a')
-            keyboard.release(Key.ctrl)
-            keyboard.press(Key.backspace)
-            keyboard.release(Key.backspace)
-            sleep(0.2)
-            keyboard.type('Administrator')
-            
-                # #Enter
-            
-            keyboard.press(Key.enter)
-            keyboard.release(Key.enter)
-            
-                # #sleep(2)
-            
-            sleep(2)
-            
-                # #type PASS
-            
-            keyboard.type('Mvusic@123')
-            keyboard.press(Key.enter)
-            keyboard.release(Key.enter)
-            sleep(2)
-            
-                # #click on YES
-            
-            mouse.position = (742, 529)
-            mouse.click(Button.left, 1)
-            sleep(20)
-            if pyautogui.locateOnScreen('RemoteConectionCheck.png', confidence=0.8) != None:
-                pass
-            else:
+        
+        mouse.position = (72, 745)
+        mouse.click(Button.left, 1)
+        sleep(1)
+        
+            # #type remote
+        
+        keyboard.type('remote')
+        sleep(2)
+        
+            # #click on remote desktop
+        
+        mouse.position = (259, 203)
+        mouse.click(Button.left, 1)
+        sleep(1.5)
+        
+            # #click on option
+        
+        mouse.position = (501, 350)
+        mouse.click(Button.left, 1)
+        sleep(0.5)
+        
+            # #click on URL bar
+        
+        mouse.position = (659, 311)
+        mouse.click(Button.left, 1)
+        keyboard.press(Key.ctrl)
+        keyboard.press('a')
+        keyboard.release('a')
+        keyboard.release(Key.ctrl)
+        keyboard.press(Key.backspace)
+        keyboard.release(Key.backspace)
+        sleep(0.2)
+        
+            # #paste the URL
+        
+        sleep(0.2)
+        keyboard.type(c)
+        sleep(0.5)
+        
+            # #select on type bar
+        
+        mouse.position = (803, 312)
+        mouse.click(Button.left, 1)
+        sleep(0.5)
+        
+            # #30 times pageleft
+        
+        def page_left():
+            i = 0
+            while i < 30:
+                keyboard.press(Key.left)
+                keyboard.release(Key.left)
+                i = i + 1
+        
+        page_left()
+        sleep(0.5)
+        
+            # #6 times page right
+        
+        def page_right():
+            i = 0
+            while i < 6:
+                keyboard.press(Key.right)
+                keyboard.release(Key.right)
+                i = i + 1
+        
+        page_right()
+        sleep(0.6)
+        
+            # #backspace 6 times
+        
+        keyboard.press(Key.backspace)
+        keyboard.release(Key.backspace)
+        keyboard.press(Key.backspace)
+        keyboard.release(Key.backspace)
+        keyboard.press(Key.backspace)
+        keyboard.release(Key.backspace)
+        keyboard.press(Key.backspace)
+        keyboard.release(Key.backspace)
+        keyboard.press(Key.backspace)
+        keyboard.release(Key.backspace)
+        keyboard.press(Key.backspace)
+        keyboard.release(Key.backspace)
+        sleep(0.5)
+        
+            # #select on type bar
+        
+        mouse.position = (803, 312)
+        mouse.click(Button.left, 1)
+        sleep(0.5)
+        
+            # keyboard.press(Key.backspace)
+            # keyboard.release(Key.backspace)
+            # sleep(0.25)
+            # #click on USER NAME
+        
+        mouse.position = (662, 344)
+        mouse.click(Button.left, 1)
+        sleep(1)
+        keyboard.press(Key.ctrl)
+        keyboard.press('a')
+        keyboard.release('a')
+        keyboard.release(Key.ctrl)
+        keyboard.press(Key.backspace)
+        keyboard.release(Key.backspace)
+        sleep(0.2)
+        keyboard.type('Administrator')
+        
+            # #Enter
+        
+        keyboard.press(Key.enter)
+        keyboard.release(Key.enter)
+        
+            # #sleep(2)
+        
+        sleep(2)
+        
+            # #type PASS
+        
+        keyboard.type('Mvusic@123')
+        keyboard.press(Key.enter)
+        keyboard.release(Key.enter)
+        sleep(2)
+        
+            # #click on YES
+        
+        mouse.position = (742, 529)
+        mouse.click(Button.left, 1)
+        sleep(20)
+        if pyautogui.locateOnScreen('RemoteConectionCheck.png', confidence=0.8) != None:
+            pass
+        else:
+                # #click on search bar
                 
-                mouse.position = (1343, 14)
+                mouse.position = (72, 745)
                 mouse.click(Button.left, 1)
-                open_chrome()
-                clear_cookies()
-                signup()
-                sleep(0.2)
-            
+                sleep(1)
                 
-                qwiklabs()
-                minimize()
-                i = 1
-                while True:
+                    # #type remote
+                
+                keyboard.type('remote')
+                sleep(2)
+                
+                    # #click on remote desktop
+                
+                mouse.position = (259, 203)
+                mouse.click(Button.left, 1)
+                sleep(1.5)
+                
+                    # #click on option
+                
+                mouse.position = (501, 350)
+                mouse.click(Button.left, 1)
+                sleep(0.5)
+                
+                    # #click on URL bar
+                
+                mouse.position = (659, 311)
+                mouse.click(Button.left, 1)
+                keyboard.press(Key.ctrl)
+                keyboard.press('a')
+                keyboard.release('a')
+                keyboard.release(Key.ctrl)
+                keyboard.press(Key.backspace)
+                keyboard.release(Key.backspace)
+                sleep(0.2)
+                
+                    # #paste the URL
+                
+                c = pyperclip.paste()
+                sleep(0.2)
+                keyboard.type(c)
+                sleep(0.5)
+                
+                    # #select on type bar
+                
+                mouse.position = (803, 312)
+                mouse.click(Button.left, 1)
+                sleep(0.5)
+                
+                    # #30 times pageleft
+                
+                def page_left():
+                    i = 0
+                    while i < 30:
+                        keyboard.press(Key.left)
+                        keyboard.release(Key.left)
+                        i = i + 1
+                
+                page_left()
+                sleep(0.5)
+                
+                    # #6 times page right
+                
+                def page_right():
+                    i = 0
+                    while i < 6:
+                        keyboard.press(Key.right)
+                        keyboard.release(Key.right)
+                        i = i + 1
+                
+                page_right()
+                sleep(0.6)
+                
+                    # #backspace 6 times
+                
+                keyboard.press(Key.backspace)
+                keyboard.release(Key.backspace)
+                keyboard.press(Key.backspace)
+                keyboard.release(Key.backspace)
+                keyboard.press(Key.backspace)
+                keyboard.release(Key.backspace)
+                keyboard.press(Key.backspace)
+                keyboard.release(Key.backspace)
+                keyboard.press(Key.backspace)
+                keyboard.release(Key.backspace)
+                keyboard.press(Key.backspace)
+                keyboard.release(Key.backspace)
+                sleep(0.5)
+                
+                    # #select on type bar
+                
+                mouse.position = (803, 312)
+                mouse.click(Button.left, 1)
+                sleep(0.5)
+                
+                    # keyboard.press(Key.backspace)
+                    # keyboard.release(Key.backspace)
+                    # sleep(0.25)
+                    # #click on USER NAME
+                
+                mouse.position = (662, 344)
+                mouse.click(Button.left, 1)
+                sleep(1)
+                keyboard.press(Key.ctrl)
+                keyboard.press('a')
+                keyboard.release('a')
+                keyboard.release(Key.ctrl)
+                keyboard.press(Key.backspace)
+                keyboard.release(Key.backspace)
+                sleep(0.2)
+                keyboard.type('Administrator')
+                
+                    # #Enter
+                
+                keyboard.press(Key.enter)
+                keyboard.release(Key.enter)
+                
+                    # #sleep(2)
+                
+                sleep(2)
+                
+                    # #type PASS
+                
+                keyboard.type('Mvusic@123')
+                keyboard.press(Key.enter)
+                keyboard.release(Key.enter)
+                sleep(2)
+                
+                    # #click on YES
+                
+                mouse.position = (742, 529)
+                mouse.click(Button.left, 1)
+                sleep(20)
+                if pyautogui.locateOnScreen('RemoteConectionCheck.png', confidence=0.8) != None:
+                    pass
+                else:
+                    
+                    mouse.position = (1343, 14)
+                    mouse.click(Button.left, 1)
                     open_chrome()
                     clear_cookies()
-                    ChangeIp()
                     signup()
                     sleep(0.2)
                 
+                    
+                    qwiklabs()
+                    minimize()
+                    i = 1
+                    while True:
+                        open_chrome()
+                        clear_cookies()
+                        ChangeIp()
+                        signup()
+                        sleep(0.2)
+                    
+                    
+                        if i % 5 == 0:
+                            circleci()
+                            minimize()
+                        else:
+                            qwiklabs()
+                            minimize()
+                        i = i + 1
+                    
+                    # #close pages
                 
-                    if i % 5 == 0:
-                        circleci()
-                        minimize()
-                    else:
-                        qwiklabs()
-                        minimize()
-                    i = i + 1
-                
-                # #close pages
-            
-            mouse.position = (714, 421)
-            mouse.click(Button.left, 1)
-            sleep(2)
-            mouse.position = (1338, 12)
-            mouse.click(Button.left, 1)
-            sleep(2)
-        # #close pages
-
-    mouse.position = (714, 421)
-    mouse.click(Button.left, 1)
-    sleep(2)
-    mouse.position = (1338, 12)
-    mouse.click(Button.left, 1)
-    sleep(2)
-
-
+                mouse.position = (714, 421)
+                mouse.click(Button.left, 1)
+                sleep(2)
+                mouse.position = (1338, 12)
+                mouse.click(Button.left, 1)
+                sleep(2)
+            # #close pages
+        
+        mouse.position = (714, 421)
+        mouse.click(Button.left, 1)
+        sleep(2)
+        mouse.position = (1338, 12)
+        mouse.click(Button.left, 1)
+        sleep(2)
+        
+        
 def clear_cookies():
     sleep(3)
 
