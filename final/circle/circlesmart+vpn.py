@@ -175,7 +175,7 @@ def signup():
 
     # #select on chrome
 
-    mouse.position = (714, 214)
+    mouse.position = (219, 585)
     mouse.click(Button.left, 1)
     sleep(0.5)
 
@@ -1831,29 +1831,6 @@ jobs:
         signup()
         sleep(0.2)
     
-        if 'tcp.ngrok.io' in z != False:
-            remote_desktop()
-            qwiklabs()
-            minimize()
-        i = 1
-        while True:
-            open_chrome()
-            clear_cookies()
-            ChangeIp()
-            signup()
-            sleep(0.2)
-        
-            if 'tcp.ngrok.io' in z != False:
-                remote_desktop()
-                if i % 5 == 0:
-                    circleci()
-                    minimize()
-                else:
-                    qwiklabs()
-                    minimize()
-                i = i + 1
-            else:
-                i = i
 
     # #click on name
 
