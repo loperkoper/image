@@ -1868,7 +1868,7 @@ jobs:
 
     mouse.position = (1390, 719)
     sleep(0.5)
-    mouse.click(Button.left, 12)
+    mouse.click(Button.left, 20)
     sleep(2)
 
 
@@ -2147,7 +2147,7 @@ jobs:
     sleep(10)
 
     if pyautogui.locateOnScreen('region.png') != None:
-        sleep(45)
+        sleep(70)
 
         # #refresh page
 
