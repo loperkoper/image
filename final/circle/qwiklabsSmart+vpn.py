@@ -333,7 +333,13 @@ def signup():
     pyautogui.moveTo(x, y, duration=0.1)
     sleep(0.5)
     pyautogui.click(button='left', clicks=1, interval=0.1)
+    ##select search bar
 
+    keyboard.press(Key.ctrl)
+    keyboard.press('l')
+    keyboard.release('l')
+    keyboard.release(Key.ctrl)
+    sleep(1)
         # # go to site
 
     pyautogui.typewrite('https://www.qwiklabs.com/users/sign_up',
