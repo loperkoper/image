@@ -19,6 +19,84 @@ import random
 import string
 sleep(5)
 
+def retry1():
+    if pyautogui.locateOnScreen('emailrecaptchaclick2.png') != None:
+            try:
+
+                if pyautogui.locateOnScreen('emailrecaptchaclick2.png') \
+                    != None:
+                    pyautogui.click('emailrecaptchaclick2.png')
+                    sleep(1)
+                if pyautogui.locateOnScreen('captchaPASS.png',
+                        confidence=0.8) != None:
+                    pass
+            except:
+                sleep(6)
+                if pyautogui.locateOnScreen('emailrecaptchaclick2.png') \
+                    != None:
+                    pyautogui.click('emailrecaptchaclick2.png')
+                    sleep(1)
+                if pyautogui.locateOnScreen('captchaPASS.png',
+                        confidence=0.8) != None:
+                    pass
+
+                                    # #click on solver
+
+            try:
+                sleep(2)
+                if pyautogui.locateOnScreen('buster.png') != None:
+                    pyautogui.click('buster.png')
+                    sleep(1)
+                if pyautogui.locateOnScreen('captchaPASS.png',
+                        confidence=0.8) != None:
+                    pass
+                if pyautogui.locateOnScreen('busterMoney.png') \
+                    != None:
+                    Buster_Money()
+                    keyboard.press(Key.ctrl)
+                    keyboard.press('1')
+                    keyboard.release('1')
+                    keyboard.release(Key.ctrl)
+                    sleep(0.5)
+            except:
+                sleep(2)
+                if pyautogui.locateOnScreen('buster.png') != None:
+                    pyautogui.click('buster.png')
+                    sleep(1)
+                if pyautogui.locateOnScreen('busterMoney.png') \
+                    != None:
+                    Buster_Money()
+                    keyboard.press(Key.ctrl)
+                    keyboard.press('1')
+                    keyboard.release('1')
+                    keyboard.release(Key.ctrl)
+                    sleep(0.5)
+            sleep(8)
+            if pyautogui.locateOnScreen('captchaPASS.png',
+                    confidence=0.8) != None:
+                pass
+
+
+
+                                    # #click on refresh
+
+            try:
+
+                if pyautogui.locateOnScreen('refresh.png') != None:
+                    pyautogui.click('refresh.png')
+                    sleep(1)
+                if pyautogui.locateOnScreen('captchaPASS.png',
+                        confidence=0.8) != None:
+                    pass
+            except:
+                sleep(2)
+                if pyautogui.locateOnScreen('refresh.png') != None:
+                    pyautogui.click('refresh.png')
+                    sleep(1)
+            sleep(3)
+            if pyautogui.locateOnScreen('captchaPASS.png',
+                    confidence=0.8) != None:
+                pass
 
 def rtry():
     clear_cookies()
@@ -843,7 +921,7 @@ def signup():
                     i = i + 1
 
     # #scroll down 12 times
-    sleep(5)
+    sleep(7)
     mouse.position = (1390, 719)
     sleep(0.5)
     mouse.click(Button.left, 20)
@@ -1271,7 +1349,7 @@ def signup():
     mouse.position = (695, 266)
     mouse.click(Button.left, 2)
     sleep(1)
-    keyboard.type('test')
+    keyboard.type('new')
     sleep(0.5)
     keyboard.press(Key.tab)
     keyboard.release(Key.tab)
@@ -1289,20 +1367,7 @@ def signup():
     keyboard.release('1')
     keyboard.release(Key.ctrl)
     sleep(0.5)
-    # #select search bar
 
-    keyboard.press(Key.ctrl)
-    keyboard.press('l')
-    keyboard.release('l')
-    keyboard.release(Key.ctrl)
-    sleep(0.5)
-
-    # #go to site circleci
-
-    keyboard.type('https://circleci.com/vcs-authorize/')
-    keyboard.press(Key.enter)
-    keyboard.release(Key.enter)
-    sleep(6)
     # #select bitbucket for loggin
 
     while pyautogui.locateOnScreen('loginWithBitbucket.png') == None:
@@ -1538,11 +1603,12 @@ def signup():
                     i = i + 1
 
     # #click on access
-
+    ChangeIp_On_Or_Off()
     if pyautogui.locateOnScreen('Grant Access.png', confidence=0.8) \
         != None:
         pyautogui.click('Grant Access.png')
     sleep(10)
+    ChangeIp_On_Or_Off()
     i = 0
     while pyautogui.locateOnScreen('whaitWhileSeengThis.png',
                                    confidence=0.8) != None:
@@ -1912,6 +1978,7 @@ jobs:
                     sleep(1)
                 if pyautogui.locateOnScreen('captchaPASS.png') != None:
                     break
+                retry1()
             except:
                 sleep(2)
                 if pyautogui.locateOnScreen('buster.png') != None:
@@ -1922,7 +1989,7 @@ jobs:
                 break
             else:
                 break
-
+            retry1()
                         # #click on refresh
 
             try:
@@ -1932,6 +1999,7 @@ jobs:
                     sleep(1)
                 if pyautogui.locateOnScreen('captchaPASS.png') != None:
                     break
+                retry1()
             except:
                 sleep(2)
                 if pyautogui.locateOnScreen('refresh.png') != None:
@@ -1940,6 +2008,7 @@ jobs:
             sleep(3)
             if pyautogui.locateOnScreen('captchaPASS.png') != None:
                 break
+            retry1()
 
                         # #click in recaptcha
 
@@ -1951,6 +2020,7 @@ jobs:
                 if pyautogui.locateOnScreen('captchaREDNgrok.png') \
                     != None:
                     rtry()
+                    retry1()
                     try:
                         sleep(2)
                         if pyautogui.locateOnScreen('buster.png') \
@@ -1959,12 +2029,14 @@ jobs:
                             sleep(1)
                         if pyautogui.locateOnScreen('captchaPASS.png') != None:
                             break
+                        retry1()
                     except:
                         sleep(2)
                         if pyautogui.locateOnScreen('buster.png') \
                             != None:
                             pyautogui.click('buster.png')
                             sleep(1)
+                        retry1()
                 if pyautogui.locateOnScreen('captchaPASS.png') != None:
                     break
             except:
@@ -1980,12 +2052,14 @@ jobs:
                     sleep(1)
                 if pyautogui.locateOnScreen('captchaPASS.png') != None:
                     break
+                retry1()
             except:
                 sleep(2)
                 if pyautogui.locateOnScreen('buster.png') != None:
                     pyautogui.click('buster.png')
                     sleep(1)
                     sleep(8)
+                retry1()
             if pyautogui.locateOnScreen('captchaPASS.png') != None:
                 break
 
@@ -1998,14 +2072,17 @@ jobs:
                     sleep(1)
                 if pyautogui.locateOnScreen('captchaPASS.png') != None:
                     break
+                retry1()
             except:
                 sleep(2)
                 if pyautogui.locateOnScreen('refresh.png') != None:
                     pyautogui.click('refresh.png')
                     sleep(1)
+                retry1()
             sleep(3)
             if pyautogui.locateOnScreen('captchaPASS.png') != None:
                 break
+
             try:
 
                 if pyautogui.locateOnScreen('buster.png') != None:
@@ -2016,6 +2093,7 @@ jobs:
                     rtry()
                 if pyautogui.locateOnScreen('captchaPASS.png') != None:
                     break
+                retry1()
             except:
                 if pyautogui.locateOnScreen('captchaPASS.png') == None:
 
@@ -2156,10 +2234,10 @@ jobs:
 
     # #wait
     ChangeIp_On_Or_Off()
-    sleep(10)
+    sleep(80)
 
     if pyautogui.locateOnScreen('region.png') != None:
-        sleep(70)
+        sleep(10)
 
         # #refresh page
 
@@ -2167,7 +2245,7 @@ jobs:
         keyboard.press('r')
         keyboard.release('r')
         keyboard.release(Key.ctrl)
-        sleep(7)
+        sleep(11)
 
     if pyautogui.locateOnScreen('region.png') != None:
         sleep(20)
