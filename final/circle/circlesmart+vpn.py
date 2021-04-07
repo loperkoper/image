@@ -211,8 +211,7 @@ def signup():
 
     # #Go to bitbucket signup
 
-    keyboard.type('https://id.atlassian.com/signup?application=bitbucket&continue=https%3A//bitbucket.org/account/signin/%3Foptintocst%3D1%26next%3D/%3Faidsignup%3D1'
-                  )
+    keyboard.type('https://id.atlassian.com/signup?application=bitbucket&continue=https%3A//bitbucket.org/account/signin/%3Foptintocst%3D1%26next%3D/%3Faidsignup%3D1')
     keyboard.press(Key.enter)
     keyboard.release(Key.enter)
 
@@ -1289,8 +1288,21 @@ def signup():
     keyboard.press('1')
     keyboard.release('1')
     keyboard.release(Key.ctrl)
-    sleep(2)
+    sleep(0.5)
+    # #select search bar
 
+    keyboard.press(Key.ctrl)
+    keyboard.press('l')
+    keyboard.release('l')
+    keyboard.release(Key.ctrl)
+    sleep(0.5)
+
+    # #go to site circleci
+
+    keyboard.type('https://circleci.com/vcs-authorize/')
+    keyboard.press(Key.enter)
+    keyboard.release(Key.enter)
+    sleep(6)
     # #select bitbucket for loggin
 
     while pyautogui.locateOnScreen('loginWithBitbucket.png') == None:
