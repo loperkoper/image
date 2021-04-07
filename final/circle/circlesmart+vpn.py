@@ -1987,8 +1987,6 @@ jobs:
             sleep(8)
             if pyautogui.locateOnScreen('captchaPASS.png') != None:
                 break
-            else:
-                break
             retry1()
                         # #click on refresh
 
