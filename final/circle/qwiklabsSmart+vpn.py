@@ -23,8 +23,9 @@ def Controll_Error():
             sleep(3)
             if pyautogui.locateOnScreen('qwiklabsError.png', confidence=0.6) != None:
                     i = 1
+                    panj()
                     while True:
-                        panj()
+                        
                         ChangeIp()
                         if i == 1:
                             signup()
@@ -794,8 +795,9 @@ def signup():
             except:
                 if pyautogui.locateOnScreen('captchaPASS.png') == None:
                     i = 1
+                    panj()
                     while True:
-                        panj()
+                        
                         ChangeIp()
                         if i == 1:
                             signup()
@@ -1559,8 +1561,9 @@ def signin():
     if pyautogui.locateOnScreen('GoogleAccept.png') == None:
         ChangeIp_On_Or_Off()
         i = 1
+        panj()
         while True:
-            panj()
+            
             ChangeIp()
             if i == 1:
                 signup()
@@ -1623,8 +1626,9 @@ def signin():
     if pyautogui.locateOnScreen('GoogleConfirm.png') == None:
         ChangeIp_On_Or_Off()
         i = 1
+        panj()
         while True:
-            panj()
+            
             ChangeIp()
             if i == 1:
                 signup()
@@ -1699,8 +1703,9 @@ def signin():
     if pyautogui.locateOnScreen('GoogleWaitCheckbox.png') == None:
         ChangeIp_On_Or_Off()
         i = 1
+        panj()
         while True:
-            panj()
+            
             ChangeIp()
             if i == 1:
                 signup()
@@ -1800,8 +1805,9 @@ def signin():
     if pyautogui.locateOnScreen('CountinueTerminal.png') == None:
         ChangeIp_On_Or_Off()
         i = 1
+        panj()
         while True:
-            panj()
+            
             ChangeIp()
             if i == 1:
                 signup()
@@ -1858,8 +1864,9 @@ def signin():
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') == None:
         ChangeIp_On_Or_Off()
         i = 1
+        panj()
         while True:
-            panj()
+            
             ChangeIp()
             if i == 1:
                 signup()
@@ -2445,8 +2452,9 @@ def signin2():
         pass
     if pyautogui.locateOnScreen('GoogleSignin.png') == None:
         i = 1
+        panj()
         while True:
-            panj()
+            
             ChangeIp()
             if i == 1:
                 signup()
@@ -2558,8 +2566,9 @@ def signin2():
     if pyautogui.locateOnScreen('GoogleAccept.png') == None:
         ChangeIp_On_Or_Off()
         i = 1
+        panj()
         while True:
-            panj()
+            
             ChangeIp()
             if i == 1:
                 signup()
@@ -2622,8 +2631,9 @@ def signin2():
     if pyautogui.locateOnScreen('GoogleConfirm.png') == None:
         ChangeIp_On_Or_Off()
         i = 1
+        panj()
         while True:
-            panj()
+            
             ChangeIp()
             if i == 1:
                 signup()
@@ -2698,8 +2708,9 @@ def signin2():
     if pyautogui.locateOnScreen('GoogleWaitCheckbox.png') == None:
         ChangeIp_On_Or_Off()
         i = 1
+        panj()
         while True:
-            panj()
+            
             ChangeIp()
             if i == 1:
                 signup()
@@ -2799,8 +2810,9 @@ def signin2():
     if pyautogui.locateOnScreen('CountinueTerminal.png') == None:
         ChangeIp_On_Or_Off()
         i = 1
+        panj()
         while True:
-            panj()
+            
             ChangeIp()
             if i == 1:
                 signup()
@@ -2857,8 +2869,9 @@ def signin2():
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') == None:
         ChangeIp_On_Or_Off()
         i = 1
+        panj()
         while True:
-            panj()
+            
             ChangeIp()
             if i == 1:
                 signup()
