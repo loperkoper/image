@@ -18,6 +18,12 @@ from time import sleep
 import random
 import string
 sleep(5)
+def Buster_Money():
+    if pyautogui.locateOnScreen('busterMoney.png') != None:
+        pyautogui.keyDown('ctrl')
+        pyautogui.press('w')
+        pyautogui.keyUp('ctrl')
+        sleep(1)
 
 def retry1():
     if pyautogui.locateOnScreen('emailrecaptchaclick2.png') != None:
@@ -349,11 +355,13 @@ def signup():
                 if pyautogui.locateOnScreen('captchaPASS.png',
                         confidence=0.8) != None:
                     break
+                Buster_Money()
             except:
                 sleep(2)
                 if pyautogui.locateOnScreen('buster.png') != None:
                     pyautogui.click('buster.png')
                     sleep(1)
+                Buster_Money()
             sleep(8)
             if pyautogui.locateOnScreen('captchaPASS.png',
                     confidence=0.8) != None:
@@ -369,15 +377,18 @@ def signup():
                 if pyautogui.locateOnScreen('captchaPASS.png',
                         confidence=0.8) != None:
                     break
+                Buster_Money()
             except:
                 sleep(2)
                 if pyautogui.locateOnScreen('refresh.png') != None:
                     pyautogui.click('refresh.png')
                     sleep(1)
+                Buster_Money()
             sleep(3)
             if pyautogui.locateOnScreen('captchaPASS.png',
                     confidence=0.8) != None:
                 break
+
             try:
 
                 if pyautogui.locateOnScreen('emailrecaptchaclick.png') \
@@ -390,6 +401,7 @@ def signup():
                 if pyautogui.locateOnScreen('captchaREDEmail.png') \
                     != None:
                     rtry()
+                Buster_Money()
             except:
                 sleep(6)
                 if pyautogui.locateOnScreen('emailrecaptchaclick.png') \
@@ -402,6 +414,7 @@ def signup():
                 if pyautogui.locateOnScreen('captchaREDEmail.png') \
                     != None:
                     rtry()
+                Buster_Money()
 
                         # #click on solver
 
@@ -413,11 +426,13 @@ def signup():
                 if pyautogui.locateOnScreen('captchaPASS.png',
                         confidence=0.8) != None:
                     break
+                Buster_Money()
             except:
                 sleep(2)
                 if pyautogui.locateOnScreen('buster.png') != None:
                     pyautogui.click('buster.png')
                     sleep(1)
+                Buster_Money()
             sleep(8)
             if pyautogui.locateOnScreen('captchaPASS.png',
                     confidence=0.8) != None:
@@ -462,12 +477,14 @@ def signup():
                         if pyautogui.locateOnScreen('captchaPASS.png',
                                 confidence=0.8) != None:
                             break
+                        Buster_Money()
                     except:
                         sleep(2)
                         if pyautogui.locateOnScreen('buster.png') \
                             != None:
                             pyautogui.click('buster.png')
                             sleep(1)
+                        Buster_Money()
                 if pyautogui.locateOnScreen('captchaPASS.png',
                         confidence=0.8) != None:
                     break
@@ -486,11 +503,13 @@ def signup():
                 if pyautogui.locateOnScreen('captchaPASS.png',
                         confidence=0.8) != None:
                     break
+                Buster_Money()
             except:
                 sleep(2)
                 if pyautogui.locateOnScreen('buster.png') != None:
                     pyautogui.click('buster.png')
                     sleep(1)
+                Buster_Money()
             sleep(8)
             if pyautogui.locateOnScreen('captchaPASS.png',
                     confidence=0.8) != None:
@@ -506,11 +525,13 @@ def signup():
                 if pyautogui.locateOnScreen('captchaPASS.png',
                         confidence=0.8) != None:
                     break
+                Buster_Money()
             except:
                 sleep(2)
                 if pyautogui.locateOnScreen('refresh.png') != None:
                     pyautogui.click('refresh.png')
                     sleep(1)
+                Buster_Money()
             sleep(3)
             if pyautogui.locateOnScreen('captchaPASS.png',
                     confidence=0.8) != None:
@@ -523,6 +544,7 @@ def signup():
                 if pyautogui.locateOnScreen('captchaPASS.png',
                         confidence=0.8) != None:
                     break
+                Buster_Money()
             except:
                 if pyautogui.locateOnScreen('captchaPASS.png') == None:
 
@@ -641,11 +663,13 @@ def signup():
             if pyautogui.locateOnScreen('bitbucket varify.png',
                     confidence=0.8) != None:
                 break
+            Buster_Money()
         except:
             sleep(2)
             if pyautogui.locateOnScreen('buster.png') != None:
                 pyautogui.click('buster.png')
                 sleep(1)
+            Buster_Money()
         sleep(8)
         if pyautogui.locateOnScreen('bitbucket varify.png',
                                     confidence=0.8) != None:
@@ -700,11 +724,13 @@ def signup():
             if pyautogui.locateOnScreen('bitbucket varify.png',
                     confidence=0.8) != None:
                 break
+            Buster_Money()
         except:
             sleep(2)
             if pyautogui.locateOnScreen('buster.png') != None:
                 pyautogui.click('buster.png')
                 sleep(1)
+            Buster_Money()
         sleep(8)
         if pyautogui.locateOnScreen('bitbucket varify.png',
                                     confidence=0.8) != None:
@@ -743,11 +769,13 @@ def signup():
                     if pyautogui.locateOnScreen('bitbucket varify.png',
                             confidence=0.8) != None:
                         break
+                    Buster_Money()
                 except:
                     sleep(2)
                     if pyautogui.locateOnScreen('buster.png') != None:
                         pyautogui.click('buster.png')
                         sleep(1)
+                    Buster_Money()
             if pyautogui.locateOnScreen('bitbucket varify.png',
                     confidence=0.8) != None:
                 break
@@ -766,11 +794,13 @@ def signup():
             if pyautogui.locateOnScreen('bitbucket varify.png',
                     confidence=0.8) != None:
                 break
+            Buster_Money()
         except:
             sleep(2)
             if pyautogui.locateOnScreen('buster.png') != None:
                 pyautogui.click('buster.png')
                 sleep(1)
+            Buster_Money()
         sleep(8)
         if pyautogui.locateOnScreen('bitbucket varify.png',
                                     confidence=0.8) != None:
@@ -803,6 +833,7 @@ def signup():
             if pyautogui.locateOnScreen('bitbucket varify.png',
                     confidence=0.8) != None:
                 break
+            Buster_Money()
         except:
             if pyautogui.locateOnScreen('bitbucket varify.png') == None:
 
@@ -1407,11 +1438,13 @@ def signup():
             if pyautogui.locateOnScreen('Grant Access.png',
                     confidence=0.8) != None:
                 break
+            Buster_Money()
         except:
             sleep(2)
             if pyautogui.locateOnScreen('buster.png') != None:
                 pyautogui.click('buster.png')
                 sleep(1)
+            Buster_Money()
         sleep(8)
         if pyautogui.locateOnScreen('Grant Access.png', confidence=0.8) \
             != None:
@@ -1464,11 +1497,13 @@ def signup():
             if pyautogui.locateOnScreen('Grant Access.png',
                     confidence=0.8) != None:
                 break
+            Buster_Money()
         except:
             sleep(2)
             if pyautogui.locateOnScreen('buster.png') != None:
                 pyautogui.click('buster.png')
                 sleep(1)
+            Buster_Money()
         sleep(8)
         if pyautogui.locateOnScreen('Grant Access.png', confidence=0.8) \
             != None:
@@ -1509,11 +1544,13 @@ def signup():
                     if pyautogui.locateOnScreen('Grant Access.png',
                             confidence=0.8) != None:
                         break
+                    Buster_Money()
                 except:
                     sleep(2)
                     if pyautogui.locateOnScreen('buster.png') != None:
                         pyautogui.click('buster.png')
                         sleep(1)
+                    Buster_Money()
             if pyautogui.locateOnScreen('Grant Access.png',
                     confidence=0.8) != None:
                 break
@@ -1532,11 +1569,13 @@ def signup():
             if pyautogui.locateOnScreen('Grant Access.png',
                     confidence=0.8) != None:
                 break
+            Buster_Money()
         except:
             sleep(2)
             if pyautogui.locateOnScreen('buster.png') != None:
                 pyautogui.click('buster.png')
                 sleep(1)
+            Buster_Money()
         sleep(8)
         if pyautogui.locateOnScreen('Grant Access.png', confidence=0.8) \
             != None:
@@ -1569,6 +1608,7 @@ def signup():
             if pyautogui.locateOnScreen('Grant Access.png',
                     confidence=0.8) != None:
                 break
+            Buster_Money()
         except:
             if pyautogui.locateOnScreen('Grant Access.png') == None:
 
@@ -1978,12 +2018,14 @@ jobs:
                     sleep(1)
                 if pyautogui.locateOnScreen('captchaPASS.png') != None:
                     break
+                Buster_Money()
                 retry1()
             except:
                 sleep(2)
                 if pyautogui.locateOnScreen('buster.png') != None:
                     pyautogui.click('buster.png')
                     sleep(1)
+                Buster_Money()
             sleep(8)
             if pyautogui.locateOnScreen('captchaPASS.png') != None:
                 break
@@ -2027,6 +2069,7 @@ jobs:
                             sleep(1)
                         if pyautogui.locateOnScreen('captchaPASS.png') != None:
                             break
+                        Buster_Money()
                         retry1()
                     except:
                         sleep(2)
@@ -2034,6 +2077,7 @@ jobs:
                             != None:
                             pyautogui.click('buster.png')
                             sleep(1)
+                        Buster_Money()
                         retry1()
                 if pyautogui.locateOnScreen('captchaPASS.png') != None:
                     break
@@ -2050,6 +2094,7 @@ jobs:
                     sleep(1)
                 if pyautogui.locateOnScreen('captchaPASS.png') != None:
                     break
+                Buster_Money()
                 retry1()
             except:
                 sleep(2)
@@ -2057,6 +2102,7 @@ jobs:
                     pyautogui.click('buster.png')
                     sleep(1)
                     sleep(8)
+                Buster_Money()
                 retry1()
             if pyautogui.locateOnScreen('captchaPASS.png') != None:
                 break
@@ -2091,6 +2137,7 @@ jobs:
                     rtry()
                 if pyautogui.locateOnScreen('captchaPASS.png') != None:
                     break
+                Buster_Money()
                 retry1()
             except:
                 if pyautogui.locateOnScreen('captchaPASS.png') == None:
