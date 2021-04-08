@@ -2233,6 +2233,10 @@ jobs:
     # #wait
     ChangeIp_On_Or_Off()
     sleep(80)
+    keyboard.press(Key.ctrl)
+    keyboard.press('r')
+    keyboard.release('r')
+    keyboard.release(Key.ctrl)
 
     if pyautogui.locateOnScreen('region.png') != None:
         sleep(10)
