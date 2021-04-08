@@ -31,6 +31,7 @@ def Controll_Error():
                             signup()
                             sleep(3)
                             signin()
+                            i = i + 1
                         signin2()
                         sleep(3)
                         if i % 5 == 0:
@@ -803,6 +804,7 @@ def signup():
                             signup()
                             sleep(3)
                             signin()
+                            i = i + 1
                         signin2()
                         sleep(3)
                         if i % 5 == 0:
@@ -974,6 +976,7 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
+                i = i + 1
             signin2()
             sleep(3)
             if i % 5 == 0:
@@ -1024,6 +1027,7 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
+                i = i + 1
             signin2()
             sleep(3)
             if i % 5 == 0:
@@ -1375,8 +1379,20 @@ def signin():
                 Controll_Error()
             except:
                 if pyautogui.locateOnScreen('captchaPASS.png') == None:
+                    i = 1
+                    while True:
+                        panj()
                         ChangeIp()
-                        signin2()
+                        if i == 1:
+                            signup()
+                            sleep(3)
+                            signin()
+                            i = i + 1
+                        sleep(3)
+                        if i % 5 == 0:
+                            panj()
+                            i = 0
+                        i = i + 1
 
         # #select console
 
@@ -1456,6 +1472,7 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
+                i = i + 1
             sleep(3)
             if i % 5 == 0:
                 panj()
@@ -1569,6 +1586,7 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
+                i = i + 1
             signin2()
             sleep(3)
             if i % 5 == 0:
@@ -1634,6 +1652,7 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
+                i = i + 1
             signin2()
             sleep(3)
             if i % 5 == 0:
@@ -1711,6 +1730,7 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
+                i = i + 1
             signin2()
             sleep(3)
             if i % 5 == 0:
@@ -1813,6 +1833,7 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
+                i = i + 1
             signin2()
             sleep(3)
             if i % 5 == 0:
@@ -1872,6 +1893,7 @@ def signin():
                 signup()
                 sleep(3)
                 signin()
+                i = i + 1
             signin2()
             sleep(3)
             if i % 5 == 0:
@@ -2378,8 +2400,22 @@ def signin2():
                 Controll_Error()
             except:
                 if pyautogui.locateOnScreen('captchaPASS.png') == None:
+                    i = 1
+                    panj()
+                    while True:
+            
                         ChangeIp()
+                        if i == 1:
+                            signup()
+                            sleep(3)
+                            signin()
+                            i = i + 1
                         signin2()
+                        sleep(3)
+                        if i % 5 == 0:
+                            panj()
+                            i = 0
+                        i = i + 1
 
         # #select console
 
@@ -2460,6 +2496,7 @@ def signin2():
                 signup()
                 sleep(3)
                 signin()
+                i = i + 1
             signin2()
             sleep(3)
             if i % 5 == 0:
@@ -2574,6 +2611,7 @@ def signin2():
                 signup()
                 sleep(3)
                 signin()
+                i = i + 1
             signin2()
             sleep(3)
             if i % 5 == 0:
@@ -2639,6 +2677,7 @@ def signin2():
                 signup()
                 sleep(3)
                 signin()
+                i = i + 1
             signin2()
             sleep(3)
             if i % 5 == 0:
@@ -2716,6 +2755,7 @@ def signin2():
                 signup()
                 sleep(3)
                 signin()
+                i = i + 1
             signin2()
             sleep(3)
             if i % 5 == 0:
@@ -2818,6 +2858,7 @@ def signin2():
                 signup()
                 sleep(3)
                 signin()
+                i = i + 1
             signin2()
             sleep(3)
             if i % 5 == 0:
@@ -2877,6 +2918,7 @@ def signin2():
                 signup()
                 sleep(3)
                 signin()
+                i = i + 1
             signin2()
             sleep(3)
             if i % 5 == 0:
