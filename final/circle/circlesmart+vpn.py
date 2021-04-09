@@ -2279,7 +2279,7 @@ jobs:
 
     # #wait
     ChangeIp_On_Or_Off()
-    sleep(80)
+    sleep(90)
     keyboard.press(Key.ctrl)
     keyboard.press('r')
     keyboard.release('r')
