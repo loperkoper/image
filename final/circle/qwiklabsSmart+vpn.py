@@ -2865,18 +2865,6 @@ def signin2():
     ##wait Continue
     ##wait
     if pyautogui.locateOnScreen('CountinueTerminal.png') == None:
-        sleep(2)
-    if pyautogui.locateOnScreen('CountinueTerminal.png') != None:
-        pass
-    if pyautogui.locateOnScreen('CountinueTerminal.png') == None:
-        sleep(2)
-    if pyautogui.locateOnScreen('CountinueTerminal.png') != None:
-        pass
-    if pyautogui.locateOnScreen('CountinueTerminal.png') == None:
-        sleep(2)
-    if pyautogui.locateOnScreen('CountinueTerminal.png') != None:
-        pass
-    if pyautogui.locateOnScreen('CountinueTerminal.png') == None:
         sleep(5)
     if pyautogui.locateOnScreen('CountinueTerminal.png') != None:
         pass
@@ -2901,7 +2889,19 @@ def signin2():
     if pyautogui.locateOnScreen('CountinueTerminal.png') != None:
         pass
     if pyautogui.locateOnScreen('CountinueTerminal.png') == None:
-        sleep(7)
+        sleep(15)
+    if pyautogui.locateOnScreen('CountinueTerminal.png') != None:
+        pass
+    if pyautogui.locateOnScreen('CountinueTerminal.png') == None:
+        sleep(15)
+    if pyautogui.locateOnScreen('CountinueTerminal.png') != None:
+        pass
+    if pyautogui.locateOnScreen('CountinueTerminal.png') == None:
+        sleep(5)
+    if pyautogui.locateOnScreen('CountinueTerminal.png') != None:
+        pass
+    if pyautogui.locateOnScreen('CountinueTerminal.png') == None:
+        sleep(17)
     if pyautogui.locateOnScreen('CountinueTerminal.png') != None:
         pass
     if pyautogui.locateOnScreen('CountinueTerminal.png') == None:
