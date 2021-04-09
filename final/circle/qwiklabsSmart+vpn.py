@@ -2822,13 +2822,13 @@ def signin2():
 
         # #choose country:
 
-    mouse.position = (83, 642)
-    mouse.click(Button.left, 1)
-    sleep(0.5)
-    keyboard.type('u')
-    keyboard.press(Key.enter)
-    keyboard.release(Key.enter)
-    sleep(2)
+    #mouse.position = (83, 642)
+    #mouse.click(Button.left, 1)
+    #sleep(0.5)
+    #keyboard.type('u')
+    #keyboard.press(Key.enter)
+    #keyboard.release(Key.enter)
+    #sleep(2)
 
         # #checkbox
 
@@ -2933,7 +2933,11 @@ def signin2():
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') != None:
         pass
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') == None:
-        sleep(2)
+        sleep(10)
+    if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') != None:
+        pass
+    if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') == None:
+        sleep(10)
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') != None:
         pass
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') == None:
@@ -2941,27 +2945,23 @@ def signin2():
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') != None:
         pass
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') == None:
-        sleep(5)
+        sleep(15)
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') != None:
         pass
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') == None:
-        sleep(5)
+        sleep(15)
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') != None:
         pass
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') == None:
-        sleep(5)
+        sleep(15)
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') != None:
         pass
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') == None:
-        sleep(5)
+        sleep(15)
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') != None:
         pass
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') == None:
-        sleep(5)
-    if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') != None:
-        pass
-    if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') == None:
-        sleep(7)
+        sleep(17)
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') != None:
         pass
     if pyautogui.locateOnScreen('WhaitUntilLoadShell.png') == None:
