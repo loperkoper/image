@@ -2284,6 +2284,7 @@ jobs:
     keyboard.press('r')
     keyboard.release('r')
     keyboard.release(Key.ctrl)
+    sleep(9)
 
     if pyautogui.locateOnScreen('region.png') != None:
         sleep(10)
