@@ -1955,57 +1955,57 @@ def signin():
 
         # #type command
 
-    #keyboard.type('docker run -p 6080:80 dorowu/ubuntu-desktop-lxde-vnc'
+    keyboard.type('docker run -p 6080:80 dorowu/ubuntu-desktop-lxde-vnc'
                   )
-    #keyboard.press(Key.enter)
-    #keyboard.release(Key.enter)
+    keyboard.press(Key.enter)
+    keyboard.release(Key.enter)
 
         # #back to google console
 
-    #keyboard.press(Key.ctrl)
-    #keyboard.press('2')
-    #keyboard.release('2')
-    #keyboard.release(Key.ctrl)
-    #sleep(1)
+    keyboard.press(Key.ctrl)
+    keyboard.press('2')
+    keyboard.release('2')
+    keyboard.release(Key.ctrl)
+    sleep(1)
 
         # #sleep
 
-    #sleep(45)
+    sleep(45)
 
         # #change port
 
-    #mouse.position = (1150, 469)
-    #mouse.click(Button.left, 1)
-    #sleep(1)
-    #mouse.position = (1077, 552)
-    #mouse.click(Button.left, 1)
-    #sleep(1)
-    #mouse.position = (490, 578)
-    #mouse.click(Button.left, 1)
-    #sleep(1)
-    #keyboard.type('6080')
-    #sleep(1)
-    #mouse.position = (504, 670)
-    #mouse.click(Button.left, 1)
-    #sleep(20)
+    mouse.position = (1150, 469)
+    mouse.click(Button.left, 1)
+    sleep(1)
+    mouse.position = (1077, 552)
+    mouse.click(Button.left, 1)
+    sleep(1)
+    mouse.position = (490, 578)
+    mouse.click(Button.left, 1)
+    sleep(1)
+    keyboard.type('6080')
+    sleep(1)
+    mouse.position = (504, 670)
+    mouse.click(Button.left, 1)
+    sleep(20)
 
         # #select terminal
 
-    #mouse.position = (10, 712)
-    #mouse.click(Button.left, 1)
-    #sleep(1.5)
-    #mouse.position = (98, 560)
-    #mouse.click(Button.left, 1)
-    #sleep(1.5)
-    #mouse.position = (219, 585)
-    #mouse.click(Button.left, 1)
-    #sleep(1.5)
+    mouse.position = (10, 712)
+    mouse.click(Button.left, 1)
+    sleep(1.5)
+    mouse.position = (98, 560)
+    mouse.click(Button.left, 1)
+    sleep(1.5)
+    mouse.position = (219, 585)
+    mouse.click(Button.left, 1)
+    sleep(1.5)
 
         # #select on terminal
 
-    #mouse.position = (570, 408)
-    #mouse.click(Button.left, 1)
-    #sleep(1)
+    mouse.position = (570, 408)
+    mouse.click(Button.left, 1)
+    sleep(1)
 
         # #write command
 
